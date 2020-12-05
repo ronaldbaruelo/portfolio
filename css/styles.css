@@ -1,0 +1,241 @@
+@font-face {
+  font-family: Guttenbay;
+  src: url(fonts/Guttenbay.ttf);
+
+
+}
+
+#title {
+  /* background: no-repeat url("../images/bg-main.jpg"); */
+  background-color: #7ee8fa;
+  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+
+background-size: auto;
+height: 100vh;
+max-width:  100%;
+
+}
+
+.title-heading {
+  margin: 100px auto 200px;
+  font-size:2.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color:#62523f;
+  z-index: 3;
+}
+
+.navbar-brand {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff !important;
+  padding left: 0;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.container-fluid {
+  padding: 3% 5%;
+  text-align: center;
+}
+
+.big-heading {
+  font-size: 250px;
+  line-height: 1.5;
+  color: white;
+  font-family: Guttenbay;
+  margin: 20px 10px;
+  align-content: center;
+}
+
+.top-heading{
+  margin-top: 200px;
+  font-size: 1.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #62523f;
+}
+.download-button {
+  margin: 20px 10px;
+}
+.bg-image {
+  position:absolute;
+  height: auto;
+  width:100%;
+  z-index: 2;
+  top:450px;
+}
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navigation-button {
+  color: #232340;
+}
+
+.title-image {
+  width: 110%;
+}
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.social-icons {
+  margin: 30px 30px;
+  font-size: 50px;
+  color: #62523f;
+
+
+}
+
+.portfolio-image {
+  position: absolute;
+  top:275px;
+  right:200px;
+}
+/* body {
+ margin: 23px;
+ font-family: "Trebuchet MS", sans-serif;
+ font-size: 15.5px;
+}
+* {
+ box-sizing: border-box;
+} */
+.container {
+ width: 100%;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+ grid-auto-rows: 200px;
+ grid-auto-flow: row dense;
+ grid-gap: 23px;
+ justify-content: center;
+}
+.card-top, .card-right, .card-bottom, .card-left {
+ display: flex;
+ flex-wrap: nowrap;
+ height: 100%;
+ width: 100%;
+ border-radius: 95.2381px;
+ box-shadow: 0px 3px 9px 1px rgba(0, 10, 20, 0.2);
+}
+.card-top {
+ flex-direction: column;
+ grid-column: auto / span 1;
+ grid-row: auto / span 2;
+}
+.card-right {
+ flex-direction: row-reverse;
+ grid-column: auto / span 2;
+ grid-row: auto / span 1;
+}
+.card-bottom {
+ flex-direction: column-reverse;
+ grid-column: auto / span 1;
+ grid-row: auto / span 2;
+}
+.card-left {
+ flex-direction: row;
+ grid-column: auto / span 2;
+ grid-row: auto / span 1;
+}
+.card-image {
+ display: flex;
+}
+.card-top .card-image, .card-bottom .card-image {
+ height: 50%;
+ width: 100%;
+}
+.card-left .card-image, .card-right .card-image {
+ height: 100%;
+ width: 50%;
+}
+.card-image img {
+ width: 100%;
+ object-fit: cover;
+}
+.card-top img {
+ border-radius: 95.2381px 95.2381px 0 0;
+}
+.card-right img {
+ border-radius: 0 95.2381px 95.2381px 0;
+}
+.card-bottom img {
+ border-radius: 0 0 95.2381px 95.2381px;
+}
+.card-left img {
+ border-radius: 95.2381px 0 0 95.2381px;
+}
+.card-text {
+ align-self: center;
+ padding: 23px;
+}
+.card-top .card-text {
+ height: auto;
+ width: auto;
+ padding-bottom: 36.8px;
+}
+.card-right .card-text {
+ height: auto;
+ width: 50%;
+ padding-left: 36.8px;
+}
+.card-bottom .card-text {
+ height: auto;
+ width: auto;
+ padding-top: 36.8px;
+}
+.card-left .card-text {
+ height: auto;
+ width: 50%;
+ padding-right: 36.8px;
+}
+.card-text p {
+ margin: 0;
+ line-height: 1.35em;
+ color: #345;
+}
+@media (max-width: 500px) {
+ .card-top {
+   flex-direction: row;
+   grid-column: auto / span 2;
+   grid-row: auto / span 1;
+ }
+ .card-bottom {
+   flex-direction: row-reverse;
+   grid-column: auto / span 2;
+   grid-row: auto / span 1;
+ }
+ .card-top .card-image, .card-bottom .card-image {
+   height: 100%;
+   width: 50%;
+ }
+ .card-top img {
+   border-radius: 95.2381px 0 0 95.2381px;
+ }
+ .card-bottom img {
+   border-radius: 0 95.2381px 95.2381px 0;
+ }
+ .card-top .card-text {
+   height: auto;
+   width: 50%;
+   padding-right: 36.8px;
+ }
+ .card-bottom .card-text {
+   height: auto;
+   width: 50%;
+   padding-left: 36.8px;
+ }
+}
+@media (max-width: 400px) {
+ .card-image {
+   width: 38% !important;
+ }
+ .card-text {
+   width: 62% !important;
+ }
+}
